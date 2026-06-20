@@ -1,113 +1,121 @@
-## Persona Adaptive Customer Support Agent 🤖
+# Persona Adaptive Customer Support Agent 🤖
 
-## Overview 🔍
+## Project Overview
 
-An AI-powered customer support agent that automatically detects customer personas, retrieves relevant support information, generates adaptive responses, and escalates complex issues to human support when necessary.
+The Persona Adaptive Customer Support Agent is an AI-powered support system designed to provide personalized customer interactions by identifying customer personas and adapting responses accordingly.
 
-The system identifies different customer types and adjusts communication style accordingly to improve customer experience and support efficiency.
+The system analyzes user queries, detects the customer's persona, retrieves relevant support information from a knowledge base, generates persona-specific responses, and escalates complex issues to a human support representative when necessary.
 
-## Supported Personas 👥
+---
+
+## Supported Customer Personas
 
 ### Technical Expert
 
-* Uses technical terminology
-* Requests logs, APIs, configurations
-* Prefers detailed technical explanations
+* Uses technical terminology and domain-specific language.
+* Requests logs, configurations, APIs, and troubleshooting details.
+* Prefers detailed and technical explanations.
 
 ### Frustrated User
 
-* Uses emotional language
-* Reports repeated issues
-* Requires empathetic and reassuring responses
+* Expresses dissatisfaction or urgency.
+* Reports repeated failures or unresolved issues.
+* Requires empathetic and reassuring communication.
 
 ### Business Executive
 
-* Focuses on business impact
-* Prefers concise communication
-* Wants resolution timelines and outcomes
+* Focuses on business impact and outcomes.
+* Prefers concise and professional responses.
+* Interested in resolution timelines and operational impact.
 
-## Features 🚀
+---
+
+## Key Features
 
 * Persona Detection
 * Adaptive Response Generation
-* Knowledge Base Integration
+* Knowledge Base Retrieval
 * Human Escalation Workflow
 * Handoff Summary Generation
-* Streamlit Web Interface
+* Streamlit-Based User Interface
 * Gemini AI Integration
 
-## Project Structure 📁
+---
 
+## Project Structure
+
+```text
 persona-support-agent/
 
 ├── app.py
-
-├── data/
-
-│ ├── account_security.md
-
-│ ├── api_authentication.md
-
-│ ├── billing_faq.txt
-
-│ ├── cloud_setup.md
-
-│ ├── database_troubleshooting.md
-
-│ ├── password_reset.txt
-
-│ ├── payment_gateway.md
-
-│ ├── refund_policy.txt
-
-│ └── user_management.md
-
+├── requirements.txt
 ├── README.md
 
-└── requirements.txt
+├── data/
+│   ├── account_security.md
+│   ├── api_authentication.md
+│   ├── billing_faq.txt
+│   ├── cloud_setup.md
+│   ├── database_troubleshooting.md
+│   ├── password_reset.txt
+│   ├── payment_gateway.md
+│   ├── refund_policy.txt
+│   └── user_management.md
 
-## Tech Stack 🛠️
+├── src/
+│   ├── __init__.py
+│   ├── classifier.py
+│   ├── rag_pipeline.py
+│   ├── generator.py
+│   ├── escalator.py
+│   └── config.py
+```
 
-* Python 3.13
-* Streamlit
-* Google Gemini API
-* Python Dotenv
+---
 
-## Architecture 🏗️
+## Technology Stack
 
+| Component                | Technology    |
+| ------------------------ | ------------- |
+| Programming Language     | Python 3.13   |
+| User Interface           | Streamlit     |
+| AI Model                 | Google Gemini |
+| Configuration Management | Python Dotenv |
+| Version Control          | Git & GitHub  |
+
+---
+
+## System Architecture
+
+```text
 User Query
-
-↓
-
+     ↓
 Persona Detection
-
-↓
-
+     ↓
 Knowledge Retrieval
-
-↓
-
-Adaptive Response Generation
-
-↓
-
+     ↓
+Response Generation
+     ↓
 Escalation Check
-
-↓
-
+     ↓
 Human Handoff Summary
+```
 
-## Escalation Conditions ⚠️
+---
 
-The system escalates conversations when:
+## Escalation Conditions
 
-* Billing-related issues
-* Refund requests
-* Legal concerns
-* Sensitive account issues
-* Unsupported requests
+The system escalates conversations to a human support representative when:
 
-## Example Queries 💬
+* Billing-related issues are reported.
+* Refund requests are submitted.
+* Legal or compliance concerns are raised.
+* Sensitive account-related actions are required.
+* The issue cannot be resolved automatically.
+
+---
+
+## Sample Queries
 
 ### Technical Expert
 
@@ -121,41 +129,51 @@ I have tried everything and nothing works. I am extremely frustrated.
 
 How does this issue impact business operations and when will it be resolved?
 
-### Escalation Example
+### Escalation Scenario
 
 I need a refund because I was charged twice.
 
-## Installation ⚙️
+---
+
+## Installation and Setup
+
+### Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Create a `.env` file:
+### Configure Environment Variables
+
+Create a `.env` file in the project root directory:
 
 ```env
 GEMINI_API_KEY=YOUR_API_KEY
 ```
 
-Run:
+### Run Application
 
 ```bash
 streamlit run app.py
 ```
 
-## Future Improvements 🔮
+---
 
-* FAISS / ChromaDB Integration
-* Advanced RAG Pipeline
+## Future Enhancements
+
+* FAISS-Based Vector Search
+* ChromaDB Integration
+* Advanced Retrieval-Augmented Generation (RAG)
 * Conversation Memory
-* LangGraph Workflow
+* LangGraph Workflow Automation
 * Sentiment Analysis
 * Analytics Dashboard
+* Human Approval Workflow
 
-## Author 👩‍💻
+---
 
-Salma
+## Author
 
-B.Tech Computer Science Engineering
+**Salma**
 
-AI Engineering Assignment Submission
+B.Tech – Computer Science and Engineering

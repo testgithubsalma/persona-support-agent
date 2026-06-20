@@ -1,7 +1,7 @@
 import streamlit as st
 from google import genai
 
-client = genai.Client(api_key="GEMINI_API_KEY")
+client = genai.Client(api_key="AQ.Ab8RN6IBd5DFPEF9-Oj1aBI0uww9lEXP5BWx4dPeUl9LaXUAbQ")
 
 st.title("Persona Adaptive Support Agent")
 

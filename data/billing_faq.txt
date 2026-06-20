@@ -1,0 +1,10 @@
+Billing FAQ
+
+Duplicate charges may occur because of payment retries.
+
+If charged twice:
+1. Verify bank statement.
+2. Wait 24 hours.
+3. Contact billing support.
+
+Refund requests require verification.
